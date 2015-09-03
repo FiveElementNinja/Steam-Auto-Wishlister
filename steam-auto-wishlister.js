@@ -58,9 +58,13 @@ console.log('Loaded');
             console.log('This app has cards. Adding to Wishlist.');
 
             var wishlist_area = document.getElementById('add_to_wishlist_area');
-            if (wishlist_area && wishlist_area.firstElementChild && wishlist_area.firstElementChild.href && wishlist_area.firstElementChild.href != '') {
+            if (wishlist_area && wishlist_area.firstElementChild && wishlist_area.firstElementChild.href && wishlist_area.firstElementChild.href != '' && wishlist_area.firstElementChild.href.indexOf('javascript:AddToWishlist(') === 0) {
                 try {
-                    eval(wishlist_area.firstElementChild.href);
+                    // click the Add To Wishlist button
+                    wishlist_area.firstElementChild.click();
+
+                    // highlight the On Wishlist button to indicate that it has been auto-clicked
+                    document.getElementsByClassName('queue_btn_active')[0].style.border ='1px solid #999999';
                 } catch (err) {
                     console.log('Error adding to Wishlist. Try reloading the page.');
                 }
