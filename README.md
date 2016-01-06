@@ -5,7 +5,7 @@ A Greasemonkey/Tampermonkey script will automatically add a Steam game to your w
 
 ## Installation
 
-1. Make sure you have [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) if you're using Firefox, or [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) if you're using Chome. Steam Auto Queue will not work without Greasemonkey or Tampermonkey.
+1. Make sure you have [Greasemonkey](https://addons.mozilla.org/firefox/addon/greasemonkey/) if you're using Firefox, or [Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) if you're using Chome. Steam Auto-Wishlister will not work without Greasemonkey or Tampermonkey.
 2. After Greasemonkey/Tampermonkey are installed, visit https://raw.githubusercontent.com/FiveElementNinja/Steam-Auto-Wishlister/master/steam-auto-wishlister.user.js and it will prompt you to install the script.
 
 
