@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name         Steam Auto-Wishlister
-// @namespace    https://github.com/FiveElementNinja/steam-auto-wishlister
-// @version      0.1
+// @namespace    https://github.com/FiveElementNinja/Steam-Auto-Wishlister
+// @version      0.2
 // @description  Automatically adds a game to your Steam wishlist when viewing its store page if it has cards.
 // @author       Five Element Ninja (@FivElementNinja)
 // @match        *://store.steampowered.com/app/*
-// @updateURL    https://github.com/FiveElementNinja/steam-auto-wishlister/steam-auto-wishlister.js
-// @downloadURL  https://github.com/FiveElementNinja/steam-auto-wishlister/steam-auto-wishlister.js
+// @updateURL    https://github.com/FiveElementNinja/Steam-Auto-Wishlister/steam-auto-wishlister.user.js
+// @downloadURL  https://github.com/FiveElementNinja/Steam-Auto-Wishlister/steam-auto-wishlister.user.js
 // @grant        none
 // @run-at       document-end
 // ==/UserScript==
@@ -33,7 +33,7 @@ console.log('Loaded');
                     console.log(btn_addtocart[j].firstElementChild);
                     if (btn_addtocart[j].firstElementChild.href.match('steam://run/')) {
                         is_free = true;
-                        break
+                        break;
                     }
                 }
             }
